@@ -1,0 +1,163 @@
+.footer {
+
+    height: 29.375rem; // 470px;
+    width:100%;
+    background:$black;
+    margin-top: 6.25rem; // 100px  
+
+    @include breakpoint-up(medLarge){
+        display: flex;
+        height: 10rem;
+        justify-content: space-between;
+        padding-right: 10%; 
+
+    }
+    
+    // footer nav  ( Logo + Page Navigation Links )
+    &__navWrapper{
+        display: block;
+        padding-top: 3.4375rem; // 55px
+
+        @include breakpoint-up(medLarge){
+            display: block;
+            width: 60%;
+            padding-top: 2.3750rem; // 40px            
+            padding-left: 10%;
+        }
+
+        // footer Logo
+        #footerLogo{
+            font-size: 1.6875rem; // 27px
+            display: block;
+            text-align: center;
+            margin-top: 0;
+
+            @include breakpoint-up(medLarge){
+                margin:0;
+                font-size: 2rem;
+                text-align: left;
+            }
+        }
+
+        // footer navigation links  ( home, about, events, ... )
+        .footerNavLinks{
+            margin: 0 auto;
+            padding: 0;
+            display: block;
+            text-align: center;
+
+            @include breakpoint-up(medLarge){
+                display: flex;
+                padding-top: 1rem;
+            }
+            
+            a{
+                position: relative;
+                font-size: $font-sm;
+                color: $white;
+                display: block;
+
+                &:not(:last-child){
+                    padding-bottom: 1.6875rem; // 27px
+                }
+
+                &::after{
+                    content: "";
+                    position: absolute;
+                    display: block;
+                    background: $white;
+                    height: 2px;
+                    margin-top: .25rem;
+                    opacity: 0;
+                }
+
+                &:hover{
+                    &::after{
+                        opacity: 100%;
+                    }
+                }                
+
+                @include breakpoint-up(medLarge){
+                    display: flex;
+                    &:not(:last-child){
+                        margin-right: 1rem;
+                    }
+
+                    &::after{
+                        content: "";
+                        position: absolute;
+                        display: block;
+                        top: 1.5rem;
+                        background: $white;
+                        height: 2px;
+                        opacity: 0;
+                        width: 50%;
+                        transform: translateX(50%);
+                    }
+
+                    &:hover{
+                        &::after{
+                            opacity: 100%;
+                        }
+                    }                
+                }
+            }
+        }   
+    }
+
+ 
+    // footer social links + attribution ( separated for flexbox styling )
+    &__social{  
+
+        display: block;
+
+        .socialLinks{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 3.125rem; // 50px
+
+            a{
+
+                position: relative; 
+
+
+                &:not(:last-child){
+                    margin-right: 1rem; // 16px
+                }
+
+                &::after{
+                    content: "";
+                    position: absolute;
+                    display: block;
+                    top: 2rem;                    
+                    background: $white;
+                    height: 2px;
+                    opacity: 0;
+                    width: 100%;
+                    
+                }
+
+                &:hover{
+                    &::after{
+                        opacity: 100%;
+                    }
+                }                 
+            }
+        }
+
+        #copyright{
+            display: flex;
+            font-size: $font-sm;
+            justify-content: center;
+
+            @include breakpoint-up(medLarge){
+                margin-top: 1rem;
+            }
+        }
+
+    }
+
+
+}    
+    

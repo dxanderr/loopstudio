@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="app/scss/style.css">
+  <title>Frontend Mentor | Loopstudios landing page</title>
+
+</head>
+<body>
+  <header class="header ">
+    <nav class="flex flex-jc-sb flex-ai-c">
+      <!-- Logo -->
+      <h1 id="Logo">loopstudios</h1>
+
+      <!-- hamburger -->
+      <a id="hamburger" href="#" class="header__toggle hide-for-desktop">
+        <span></span>
+        <span></span>
+        <span></span>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <div class="header__links hide-for-mobile">
+        <a href="">About</a><a href="">Careers</a><a href="">Events</a><a href="">Products</a><a href="">Support</a>
+      </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="header__menu has-fade">
+      <ul>
+        <li class="nav-item">
+          <a href="">ABOUT</a>
+        </li>
+        <li class="nav-item">
+          <a href="">CAREERS</a>
+        </li>
+        <li class="nav-item">
+          <a href="">EVENTS</a>
+        </li>
+        <li class="nav-item">
+          <a href="">PRODUCTS</a>
+        </li>
+        <li class="nav-item">
+          <a href="">SUPPORT</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Hero Text -->
+    <div class="header__hero">
+      <h2>IMMERSIVE EXPERIENCES THAT DELIVER</h2>
+    </div>
+  </header>
+
+  <!-- Start of Main Section: Two Pars - 1. About 2.Our Creations (Main class is used for section spacing) -->
+  <section class="about main">
+    <div class="about__image">
+    </div>
+
+    <div class="about__text">
+      <h3>THE LEADER IN INTERACTIVE VR</h3>
+      <p>Founded in 2011, Loopstudios has been producing world-class virtual reality
+      projects for some of the best companies around the globe. Our award-winning
+      creations have transformed businesses through digital experiences that bind
+      to their brand.</p>
+    </div>
+  </section>
+
+  <!-- Images and Project Links -->
+  <section class="ourCreations main">
+    <div class="ourCreations__container">
+      
+      <!-- section header -->
+      <div class="headerWrap">
+        <div class="creationsHeader">
+          <h3>OUR CREATIONS</h3>
+          <div class="creationsBtn">
+            <a class="creationsButtonDesktop"href="#">SEE ALL</a>
+          </div>
+        </div>
+        <button class="creationsButtonDesktop">SEE ALL</btn>
+      </div>
+
+      <!-- table holding project images -->
+      <div class="creationsTable">
+        <div class="itemWrap">  
+          <p>DEEP<br>EARTH</p>
+          <div class="item item1"></div>
+        </div>
+        <div class="itemWrap">
+          <p>NIGHT<br>ARCADE</p>
+          <div class="item item2"></div>
+        </div>
+        <div class="itemWrap">
+          <p>SOCCER<br>TEAM VR</p>
+          <div class="item item3"></div>
+        </div>
+        <div class="itemWrap">
+          <p>THE<br>GRID</p>
+          <div class="item item4"></div>
+        </div>
+        <div class="itemWrap">
+          <p>FROM UP<br>ABOVE VR</p>
+          <div class="item item5"></div>
+        </div>
+        <div class="itemWrap">
+          <p>ROCKET<br>BOREALIS</p>
+          <div class="item item6"></div>
+        </div>
+        <div class="itemWrap">
+          <p>THE<br>CURIOSITY</p>
+          <div class="item item7"></div>
+        </div>
+        <div class="itemWrap">
+          <p>MAKE IT<br>FISHEYE</p>
+          <div class="item item8"></div>
+        </div>
+      </div>
+
+      <!-- Our Creation Button -->
+      <div class="creationsBtnCont" >
+        <button class="creationsBtnM">SEE ALL</btn>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="footer">
+
+    <!-- footer logo and nav links -->
+    <div class="footer__navWrapper">
+      
+      <!-- footer logo -->
+      <a href=""><p id="footerLogo">loopstudios</p>
+      </a>
+      
+      <!-- footer navigation links -->
+      <div class="footerNavLinks">
+        <a href="">About</a><a href="">Careers</a><a href="">Events</a><a href="">Products</a><a href="">Support</a>
+      </div>
+
+    </div>   
+
+    <!-- footer social media links (separated for responsive styles - flexbox ) -->
+    <div class="footer__social">
+      <div class="socialLinks">
+        <a href="#" id="instagram">
+          <img src="/images/icon-facebook.svg" alt="instagram">
+        </a>
+        <a href="#" id="instagram">
+          <img src="/images/icon-twitter.svg" alt="instagram">
+        </a>
+        <a href="#" id="instagram">
+          <img src="/images/icon-pinterest.svg" alt="instagram">
+        </a>
+        <a href="#" id="instagram">
+          <img src="/images/icon-instagram.svg" alt="instagram">
+        </a>
+      </div>
+
+      <!-- copyright section -->
+      <p id='copyright'>&copy; 2021. All rights reserved.</p>
+    </div>
+  </footer>
+  <script src="app/js/app.js"></script>
+</body>
+</html>
